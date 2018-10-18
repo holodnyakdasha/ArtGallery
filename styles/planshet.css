@@ -68,7 +68,7 @@ a{
 }
 .main_about_us .description{
     display: flex;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
     justify-content: space-around;
     align-items:center;

@@ -1,16 +1,8 @@
-// $(document).ready(function(){
-//     $('.menu-toggle').on('click',function(){
-//         $('.menu-toggle').toggleClass('active');
-//     });
-// });
+let menu = document.getElementById('menu');
+let burger = document.getElementById('burger');
 
-var toggle = document.getElementById('toggle');
-
-
-toggle.addEventListener('click', function () {
-
-
-
+burger.addEventListener('click', function () {
+    menu.style.display='block';
 });
 
 

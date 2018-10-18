@@ -7,8 +7,42 @@ body{
     display: none;
 }
 
+.menu_item{
+    font-size: 25px;
+}
+
+.hamburger{
+    display: block;
+    height: 40px;
+    width: 40px;
+    float: right;
 
 
+
+}
+.burger_menu{
+    background: url("../ico/burger_menu.svg");
+    height: 40px;
+    width: 40px;
+    position:absolute;
+}
+
+.popup_menu{
+    display: none;
+    width: 100%;
+    height: 400px;
+    background: #404040;
+    opacity: 0.8;
+    z-index: 20;
+}
+.popup_menu .burg{
+   list-style-type: none;
+
+}
+.burg{
+    font-size: 15px;
+    color: #000;
+}
 
 
 
@@ -54,12 +88,13 @@ body{
 
 }
 .main_about_us .description{
-    display: flex;
-    font-family: 'Pacifico', cursive;
+    /*display: flex;*/
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
-    justify-content: center;
-    align-items:center;
-    flex-wrap:wrap;
+    /*justify-content: center;*/
+    /*align-items:center;*/
+    /*flex-wrap:wrap;*/
+    text-align: center;
 }
 
 
@@ -73,93 +108,79 @@ body{
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+.input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #aca49c;
     font-size: 0.875em;
 }
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+.input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
     color: #bbb5af;
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+.input::-moz-placeholder, textarea::-moz-placeholder {
     color: #aca49c;
     font-size: 0.875em;
 }
 
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+.input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
     color: #bbb5af;
 }
 
-input::placeholder, textarea::placeholder {
+.input::placeholder, textarea::placeholder {
     color: #aca49c;
     font-size: 0.875em;
 }
 
-input:focus::placeholder, textarea::focus:placeholder {
+.input:focus::placeholder, textarea::focus:placeholder {
     color: #bbb5af;
 }
 
-input::-ms-placeholder, textarea::-ms-placeholder {
+.input::-ms-placeholder, textarea::-ms-placeholder {
     color: #aca49c;
     font-size: 0.875em;
 }
 
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+.input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
     color: #bbb5af;
 }
 
 /* on hover placeholder */
 
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+.input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
     color: #e2dedb;
     font-size: 0.875em;
 }
 
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+.input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
     color: #cbc6c1;
 }
 
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+.input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
     color: #e2dedb;
     font-size: 0.875em;
 }
 
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+.input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
     color: #cbc6c1;
 }
 
-input:hover::placeholder, textarea:hover::placeholder {
+.input:hover::placeholder, textarea:hover::placeholder {
     color: #e2dedb;
     font-size: 0.875em;
 }
 
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+.input:hover:focus::placeholder, textarea:hover:focus::placeholder {
     color: #cbc6c1;
 }
 
-input:hover::placeholder, textarea:hover::placeholder {
+.input:hover::placeholder, textarea:hover::placeholder {
     color: #e2dedb;
     font-size: 0.875em;
 }
 
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+.input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     color: #cbc6c1;
 }
-
-/*body {*/
-/*font-family: 'Lato', sans-serif;*/
-/*background: #e2dedb;*/
-/*color: #b3aca7;*/
-/*}*/
-
-/*header {*/
-/*position: relative;*/
-/*margin: 100px 0 25px 0;*/
-/*font-size: 2.3em;*/
-/*text-align: center;*/
-/*letter-spacing: 7px;*/
-/*}*/
 
 #form {
     position: relative;
@@ -167,7 +188,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     margin: 50px auto 50px auto;
 }
 
-input {
+.input {
     font-family: 'Lato', sans-serif;
     font-size: 0.875em;
     width: 270px;
@@ -185,7 +206,7 @@ input {
     -ms-transition: all 0.3s ease-in-out;
 }
 
-input:hover {
+.input:hover {
     background: #b3aca7;
     color: #e2dedb;
 }

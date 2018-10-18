@@ -5,9 +5,10 @@
     <title>Title</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (max-width: 500px) " href="styles/phone.css"/>
-    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width:900px)" href="styles/planshet.css">
-    <script src="scripts/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 400px) " href="styles/phone.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 500px) and (max-width:900px)" href="styles/planshet.css">
+
 
 
 </head>
@@ -21,6 +22,17 @@
         </nav>
     </div>
     <div class="hamburger">
+        <input type="button" class="burger_menu" id="burger">
+    </div>
+    <div class="popup_menu" id="menu">
+
+        <ul class="burg">
+           <li><a>Our  Work</a></li>
+           <li><a>About us</a></li>
+           <li><a>Contacts</a></li>
+
+        </ul>
+
     </div>
 
     <!--<div class="carousel">-->
@@ -46,12 +58,36 @@
         </div>
         <div class="image_container">
             <img src="images/item3.jpg">
+            <div class="after">Test the Rest – East side Gallery in Berlin. Birgit Kinder.</div>
+
         </div>
         <div class="image_container">
             <img src="images/item3.jpg">
+            <div class="after">Test the Rest – East side Gallery in Berlin. Birgit Kinder.</div>
+
         </div>
         <div class="image_container">
             <img src="images/item3.jpg">
+            <div class="after">Test the Rest – East side Gallery in Berlin. Birgit Kinder.</div>
+
+        </div><div class="image_container">
+            <img src="images/item3.jpg">
+        <div class="after">Test the Rest – East side Gallery in Berlin. Birgit Kinder.</div>
+
+    </div>
+        <div class="image_container">
+            <img src="images/item3.jpg">
+            <div class="after">Test the Rest – East side Gallery in Berlin. Birgit Kinder.</div>
+
+        </div><div class="image_container">
+            <img src="images/item3.jpg">
+        <div class="after">Test the Rest – East side Gallery in Berlin. Birgit Kinder.</div>
+
+    </div>
+        <div class="image_container">
+            <img src="images/item3.jpg">
+            <div class="after">Test the Rest – East side Gallery in Berlin. Birgit Kinder.</div>
+
         </div>
         <div class="image_container">
             <img src="images/item2.jpg">
@@ -77,10 +113,10 @@
         <p class="menu_item">Contacts</p>
         <form id="form" class="topBefore">
 
-            <input id="name" type="text" placeholder="NAME">
-            <input id="email" type="text" placeholder="E-MAIL">
+            <input class="input" id="name" type="text" placeholder="NAME">
+            <input class="input" id="email" type="text" placeholder="E-MAIL">
             <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-            <input id="submit" type="submit" value="GO!">
+            <input class="input" id="submit" type="submit" value="GO!">
 
         </form>
         <nav class="menu_contacts">
@@ -96,4 +132,5 @@
 
 <footer class="footer"></footer>
 </body>
+<script src="scripts/script.js"></script>
 </html>

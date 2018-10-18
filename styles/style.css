@@ -8,7 +8,7 @@ body{
     background: url("../images/header.jpg") no-repeat;
     background-size: cover;
     width: 100%;
-    height:650px;
+    height:800px;
 
 }
 .menu_container{
@@ -19,10 +19,10 @@ body{
 }
 .menu_container a{
     display:inline-block;
-    padding:25px;
+    padding:35px;
 }
 .menu a{
-    font-size:25px;
+    font-size:30px;
     font-family: 'Pacifico', cursive;
     color: black;
     text-decoration: none;
@@ -34,10 +34,15 @@ body{
 .menu_item{
     font-family: 'Pacifico', cursive;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 
-
+.hamburger{
+    display: none;
+}
+.popup_menu{
+    display: none;
+}
 
 .carousel {
     margin: 0 auto;
@@ -57,7 +62,7 @@ body{
     /*width: 100%;*/
     display: flex;
     flex-direction: row;
-   justify-content: space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
 
 
@@ -67,20 +72,32 @@ body{
     width: 300px;
     height: 300px;
 
+
 }
-/*.image_container{*/
-    /*width: 30%;*/
-/*}*/
-.image_container .after{
+.image_container {
+    position: relative;
+
+}
+.after{
+    font-size: 1.5em;
+    text-align: center;
+
+}
+.image_container .after {
     width: 300px;
     height: 300px;
     display: none;
-    color: darkgrey;
+    color: white;
+    position: absolute;
+    top: 10px;
 }
 .image_container:hover .after {
     display: block;
     background: rgba(0, 0, 0, .6);
     opacity: 80%;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 4px 4px #989898;
 }
 
 /*About us block*/
@@ -90,13 +107,14 @@ body{
 
 }
 .main_about_us .description{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Pacifico', cursive;
-    font-size: 15px;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    /*justify-content:center;*/
+    /*align-items:center;*/
+    /*flex-wrap:wrap;*/
+    text-align: center;
 }
 
 
@@ -226,7 +244,7 @@ input {
     -ms-transition: all 0.3s ease-in-out;
 }
 
-input:hover {
+.input:hover {
     background: #b3aca7;
     color: #e2dedb;
 }

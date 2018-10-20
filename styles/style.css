@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /*Menu block*/
@@ -17,9 +18,21 @@ body{
     align-items:center;
     flex-wrap:wrap;
 }
+@media screen and (max-width: 400px) {
+    .menu_container{
+        display: none;
+    }
+
+}
 .menu_container a{
     display:inline-block;
-    padding:35px;
+    padding:40px;
+
+}
+@media screen and ( min-width: 400px) and (max-width:900px) {
+    .menu_container a {
+        padding: 25px;
+    }
 }
 .menu a{
     font-size:30px;
@@ -27,6 +40,13 @@ body{
     color: black;
     text-decoration: none;
 }
+@media screen and ( min-width: 400px) and (max-width:900px) {
+    .menu a {
+        font-size: 25px;
+    }
+}
+
+
 .menu a:hover{
     color: purple;
 
@@ -36,26 +56,68 @@ body{
     text-align: center;
     font-size: 30px;
 }
+@media screen and ( min-width: 400px) and (max-width:900px) {
+    .menu_item{
+        font-size: 25px;
+    }
+}
+
 
 .hamburger{
     display: none;
 }
+@media screen and (max-width: 400px) {
+    .hamburger{
+        display: block;
+        height: 40px;
+        width: 40px;
+        float: right;
+    }
+
+}
 .popup_menu{
     display: none;
 }
+@media screen and (max-width: 400px) {
+    .popup_menu{
+        display: none;
+        width: 360px;
+        height: 400px;
+        background: #404040;
+        opacity: 0.8;
+        z-index: 20;
 
-.carousel {
-    margin: 0 auto;
-    width:900px;
-    height: 300px;
-    position: relative;
+    }
+
 }
-.carousel img {
-    overflow:hidden;
-    cursor: pointer; /* not needed if you wrap carousel items in links */
-    width: 300px;
-    height: 300px;
+@media screen  and (max-width: 400px){
+    .popup_menu .burg{
+        list-style-type: none;
+
+    }
+
 }
+.burg{
+    display: none;
+}
+@media screen and (max-width: 400px) {
+   .popup_menu .burg li{
+        font-size: 15px;
+        color: white;
+        display: block;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .burger_menu{
+        background: url("../ico/burger_menu.svg");
+        height: 40px;
+        width: 40px;
+        position:absolute;
+    }
+
+}
+
 
 /*Work block*/
 .container{
@@ -65,6 +127,16 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
 
+
+}
+ @media screen and (max-width: 400px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+} {
 
 }
 .container img{
@@ -107,14 +179,16 @@ body{
 
 }
 .main_about_us .description{
-    /*display: flex;*/
-    /*flex-direction: column;*/
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
-    /*justify-content:center;*/
-    /*align-items:center;*/
-    /*flex-wrap:wrap;*/
     text-align: center;
+}
+
+@media screen and (max-width: 400px){
+    .main_about_us .description{
+        font-size: 15px;
+    }
+
 }
 
 
@@ -142,77 +216,77 @@ flex-wrap:wrap;}
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+.input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #aca49c;
     font-size: 0.875em;
 }
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+.input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
     color: #bbb5af;
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+.input::-moz-placeholder, textarea::-moz-placeholder {
     color: #aca49c;
     font-size: 0.875em;
 }
 
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+.input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
     color: #bbb5af;
 }
 
-input::placeholder, textarea::placeholder {
+.input::placeholder, textarea::placeholder {
     color: #aca49c;
     font-size: 0.875em;
 }
 
-input:focus::placeholder, textarea::focus:placeholder {
+.input:focus::placeholder, textarea::focus:placeholder {
     color: #bbb5af;
 }
 
-input::-ms-placeholder, textarea::-ms-placeholder {
+.input::-ms-placeholder, textarea::-ms-placeholder {
     color: #aca49c;
     font-size: 0.875em;
 }
 
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+.input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
     color: #bbb5af;
 }
 
 /* on hover placeholder */
 
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+.input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
     color: #e2dedb;
     font-size: 0.875em;
 }
 
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+.input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
     color: #cbc6c1;
 }
 
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+.input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
     color: #e2dedb;
     font-size: 0.875em;
 }
 
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+.input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
     color: #cbc6c1;
 }
 
-input:hover::placeholder, textarea:hover::placeholder {
+.input:hover::placeholder, textarea:hover::placeholder {
     color: #e2dedb;
     font-size: 0.875em;
 }
 
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+.input:hover:focus::placeholder, textarea:hover:focus::placeholder {
     color: #cbc6c1;
 }
 
-input:hover::placeholder, textarea:hover::placeholder {
+.input:hover::placeholder, textarea:hover::placeholder {
     color: #e2dedb;
     font-size: 0.875em;
 }
 
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+.input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     color: #cbc6c1;
 }
 
@@ -224,7 +298,16 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     margin: 50px auto 50px auto;
 }
 
-input {
+@media screen and (max-width: 400px){
+
+    #form {
+
+        width:300px;
+
+    }
+}
+
+.input {
     font-family: 'Lato', sans-serif;
     font-size: 0.875em;
     width: 470px;
@@ -242,6 +325,12 @@ input {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 400px){
+    .input{
+        width: 270px;
+    }
 }
 
 .input:hover {
@@ -270,6 +359,14 @@ textarea {
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 400px){
+    textarea {
+        width: 270px;
+        max-width: 400px;
+
+    }
+
+}
 
 textarea:hover {
     background: #b3aca7;
@@ -291,6 +388,12 @@ textarea:hover {
 
     border: solid 1px #b3aca7;
     border-top: none;
+}
+
+@media screen and (max-width: 400px){
+    #submit {
+        width: 302px;
+    }
 }
 
 #submit:hover {

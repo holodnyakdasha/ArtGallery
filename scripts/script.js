@@ -1,9 +1,9 @@
-let menu = document.getElementById('menu');
-let burger = document.getElementById('burger');
-
-burger.addEventListener('click', function () {
-    menu.style.display='block';
+$("#burger").click(function () {
+    $("#menu").show();
 });
 
+$("#burger").dblclick(function() {
+    $("#menu").hidden;
+});
 
 

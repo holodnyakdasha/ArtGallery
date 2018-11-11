@@ -72,15 +72,18 @@ body{
         height: 40px;
         width: 40px;
         float: right;
+        cursor: pointer;
+        z-index: 100;
     }
 
 }
-.popup_menu{
+
+.hidden {
     display: none;
 }
+
 @media screen and (max-width: 400px) {
     .popup_menu{
-        display: none;
         width: 360px;
         height: 400px;
         background: #404040;
@@ -93,42 +96,47 @@ body{
 @media screen  and (max-width: 400px){
     .popup_menu .burg{
         list-style-type: none;
-
+    }
+    .popup_menu .burg a{
+    text-decoration: none;
+        color: white;
     }
 
+    .popup_menu .burg a:hover{
+        color: purple;
+    }
 }
-.burg{
-    display: none;
-}
+
 @media screen and (max-width: 400px) {
    .popup_menu .burg li{
-        font-size: 15px;
+        font-size: 20px;
         color: white;
         display: block;
+       text-align: center;
     }
 
-}
-@media screen and (max-width: 400px){
     .burger_menu{
         background: url("../ico/burger_menu.svg");
         height: 40px;
         width: 40px;
         position:absolute;
+        z-index: 1000;
     }
 
+
 }
+
 
 
 /*Work block*/
 .container{
-    /*width: 100%;*/
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-
-
 }
+
+
  @media screen and (max-width: 400px) {
     .container{
         flex-direction: column;
@@ -136,9 +144,8 @@ body{
         align-items: center;
     }
 
-} {
-
 }
+
 .container img{
     margin-top:10px;
     width: 300px;
@@ -406,7 +413,3 @@ textarea:hover {
     background: #527bbd;
     margin-top: 20px;
 }
-
-
-
-

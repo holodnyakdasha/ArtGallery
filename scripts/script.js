@@ -1,9 +1,8 @@
-$("#burger").click(function () {
-    $("#menu").show();
-});
+let popup_menu = $('#popup');
+let burger = $('#burger');
 
-$("#burger").dblclick(function() {
-    $("#menu").hidden;
-});
+function toggleBurger() {
+    popup_menu.hasClass('hidden') ? popup_menu.removeClass('hidden') : popup_menu.addClass('hidden')
+}
 
-
+burger.on('click', toggleBurger);

@@ -3,7 +3,6 @@ body{
     padding: 0;
     scroll-behavior: smooth;
 }
-
 /*Menu block*/
 .header{
     background: url("../images/header.jpg") no-repeat;
@@ -18,7 +17,7 @@ body{
     align-items:center;
     flex-wrap:wrap;
 }
-@media screen and (max-width: 400px) {
+@media all and (max-width: 400px) {
     .menu_container{
         display: none;
     }
@@ -67,7 +66,7 @@ body{
 .hamburger{
     display: none;
 }
-@media screen and (max-width: 400px) {
+@media all and (max-width: 400px) {
     .hamburger{
         display: block;
         height: 40px;
@@ -81,16 +80,14 @@ body{
 
 }
 
-@media screen and (min-width: 400px){
-    .burg{
+@media screen and (min-width: 401px){
+    .popup_menu{
         display: none;
     }}
 .hidden {
     display: none;
 }
-.show{
-    display: block;
-}
+
 @media screen and (max-width: 400px) {
     .popup_menu{
         width: calc(100% - 40px);
@@ -438,6 +435,25 @@ textarea:hover {
     color: #e2dedb;
 }
 
+.scroll{
+    margin-left: calc(100% - 50% - 25px);
+    margin-right: calc(100% - 50% - 25px);
+
+}
+.scroll img{
+    width: 40px;
+    height: 40px;
+
+}
+.scroll img:hover{
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 50px;
+    background: #99c2ff;
+    opacity: 0.8;
+}
 
 .footer{
     height: 50px;

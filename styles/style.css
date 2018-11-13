@@ -86,7 +86,7 @@ body{
 @media screen and (max-width: 400px) {
     .popup_menu{
         width: calc(100% - 40px);
-        height: 360px;
+        height: 60%;
        float:right;
         background: #404040;
         opacity: 0.8;
@@ -137,16 +137,14 @@ body{
 /*Work block*/
 
 .container{
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.image_container:nth-child(-n+4){
 
-}
 
  @media screen and (max-width: 400px) {
     .container{
@@ -159,8 +157,8 @@ body{
 
 .container img{
     margin-top:10px;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 
 
 }
@@ -173,9 +171,12 @@ body{
     text-align: center;
 
 }
+.after p{
+    margin: 30% auto;
+}
 .image_container .after {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     display: none;
     color: white;
     position: absolute;
@@ -207,6 +208,17 @@ body{
         font-size: 15px;
     }
 
+    .container img{
+        margin-top:10px;
+        width: 300px;
+        height: 300px;
+
+
+    }
+    .image_container .after {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 

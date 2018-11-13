@@ -85,7 +85,7 @@ body{
 @media screen and (max-width: 400px) {
     .popup_menu{
         width: 360px;
-        height: 400px;
+        height: 360px;
         background: #404040;
         opacity: 0.8;
         z-index: 20;
@@ -129,13 +129,18 @@ body{
 
 
 /*Work block*/
+
 .container{
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.image_container:nth-child(-n+4){
 
+}
 
  @media screen and (max-width: 400px) {
     .container{

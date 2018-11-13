@@ -29,6 +29,7 @@ body{
     padding:40px;
 
 }
+
 @media screen and ( min-width: 400px) and (max-width:900px) {
     .menu_container a {
         padding: 25px;
@@ -80,8 +81,15 @@ body{
 
 }
 
+@media screen and (min-width: 400px){
+    .burg{
+        display: none;
+    }}
 .hidden {
     display: none;
+}
+.show{
+    display: block;
 }
 @media screen and (max-width: 400px) {
     .popup_menu{

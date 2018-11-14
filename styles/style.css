@@ -17,7 +17,7 @@ body{
     align-items:center;
     flex-wrap:wrap;
 }
-@media all and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     .menu_container{
         display: none;
     }
@@ -29,7 +29,7 @@ body{
 
 }
 
-@media screen and ( min-width: 400px) and (max-width:900px) {
+@media screen and ( min-width: 460px) and (max-width:900px) {
     .menu_container a {
         padding: 25px;
     }
@@ -40,7 +40,7 @@ body{
     color: black;
     text-decoration: none;
 }
-@media screen and ( min-width: 400px) and (max-width:900px) {
+@media screen and ( min-width: 460px) and (max-width:900px) {
     .menu a {
         font-size: 25px;
     }
@@ -56,7 +56,7 @@ body{
     text-align: center;
     font-size: 30px;
 }
-@media screen and ( min-width: 400px) and (max-width:900px) {
+@media screen and ( min-width: 460px) and (max-width:900px) {
     .menu_item{
         font-size: 25px;
     }
@@ -66,7 +66,7 @@ body{
 .hamburger{
     display: none;
 }
-@media all and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     .hamburger{
         display: block;
         height: 40px;
@@ -80,7 +80,7 @@ body{
 
 }
 
-@media screen and (min-width: 401px){
+@media screen and (min-width: 462px){
     .popup_menu{
         display: none;
     }}
@@ -88,7 +88,7 @@ body{
     display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     .popup_menu{
         width: calc(100% - 40px);
         height: 60%;
@@ -101,7 +101,7 @@ body{
     }
 
 }
-@media screen  and (max-width: 400px){
+@media screen  and (max-width: 460px){
     .popup_menu .burg{
         list-style-type: none;
     }
@@ -115,9 +115,9 @@ body{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
    .popup_menu .burg li{
-        font-size: 20px;
+        font-size: 35px;
         color: white;
         display: block;
        text-align: center;
@@ -151,7 +151,7 @@ body{
 }
 
 
- @media screen and (max-width: 400px) {
+ @media screen and (max-width: 460px) {
     .container{
         flex-direction: column;
         justify-content: center;
@@ -208,21 +208,21 @@ body{
     text-align: center;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 460px){
     .main_about_us .description{
         font-size: 15px;
     }
 
     .container img{
         margin-top:10px;
-        width: 300px;
-        height: 300px;
+        width: 360px;
+        height: 350px;
 
 
     }
     .image_container .after {
-        width: 300px;
-        height: 300px;
+        width: 370px;
+        height: 350px;
     }
 }
 
@@ -333,7 +333,7 @@ flex-wrap:wrap;}
     margin: 50px auto 50px auto;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 460px){
 
     #form {
 
@@ -362,7 +362,7 @@ flex-wrap:wrap;}
     -ms-transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 460px){
     .input{
         width: 270px;
     }
@@ -394,10 +394,10 @@ textarea {
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 460px){
     textarea {
         width: 270px;
-        max-width: 400px;
+        max-width: 460px;
 
     }
 
@@ -425,7 +425,7 @@ textarea:hover {
     border-top: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 460px){
     #submit {
         width: 302px;
     }
